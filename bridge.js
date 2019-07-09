@@ -16,8 +16,9 @@ ircClient.on('error', (message) => {
 
 ircClient.on(`message${process.env.IRC_CHANNEL}`, async (from, message) => {
 	console.log(from, message);
+	if (message.trim().length < 1) return;
 	const channel = discordClient.bridgeChannel;
-	await channel.send(`<${from}> ${message}`);
+	await channel.send(`<${from}> ${message.trim()}`);
 });
 
 ircClient.on('registered', () => {
