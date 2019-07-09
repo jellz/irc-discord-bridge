@@ -10,5 +10,8 @@
 		"discord.js": "discordjs/discord.js",
 		"dotenv": "^8.0.0",
 		"irc": "^0.5.2"
+	},
+	"scripts": {
+		"start": "node bridge.js"
 	}
 }
