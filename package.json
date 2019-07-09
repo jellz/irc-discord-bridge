@@ -1,9 +1,14 @@
 {
-  "name": "irc-discord-bridge",
-  "version": "1.0.0",
-  "main": "src/index.js",
-  "repository": "git@github.com:jellz/irc-discord-bridge",
-  "author": "Daniel Gulic <danielgulic@gmail.com>",
-  "license": "MIT",
-  "private": true
+	"name": "irc-discord-bridge",
+	"version": "1.0.0",
+	"main": "bridge.js",
+	"repository": "git@github.com:jellz/irc-discord-bridge",
+	"author": "Daniel Gulic <danielgulic@gmail.com>",
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"discord.js": "discordjs/discord.js",
+		"dotenv": "^8.0.0",
+		"irc": "^0.5.2"
+	}
 }
