@@ -9,3 +9,5 @@ The bot can be used for any Discord server and IRC channel. Installation is easy
 3. Rename the `.env.example` file to `.env` and fill it in
 4. Install the dependencies (`yarn` or `npm install`)
 5. Start the bot (`yarn start` or `npm start`)
+
+Feel free to [create an issue](https://github.com/jellz/irc-discord-bridge/issues) if you have any questions.
