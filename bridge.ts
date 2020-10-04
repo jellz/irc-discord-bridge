@@ -12,7 +12,7 @@ if (!process.env.DISCORD_CHANNEL)
 	throw Error('Missing environment variable: DISCORD_CHANNEL');
 
 const ircClient = new irc.Client(
-	'chat.freenode.net',
+	process.env.IRC_NETWORK || 'chat.freenode.net',
 	process.env.IRC_BOT_NAME,
 	{
 		channels: [process.env.IRC_CHANNEL],
